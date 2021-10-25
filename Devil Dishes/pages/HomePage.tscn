@@ -1,0 +1,241 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://MagicOwlPersonalUse.tres" type="DynamicFont" id=1]
+[ext_resource path="res://menu.png" type="Texture" id=2]
+[ext_resource path="res://search.png" type="Texture" id=3]
+[ext_resource path="res://scripts/MenuButton.gd" type="Script" id=4]
+[ext_resource path="res://icon.png" type="Texture" id=5]
+[ext_resource path="res://scripts/Add.gd" type="Script" id=6]
+
+[node name="HomePage" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NavBar" type="Panel" parent="."]
+margin_left = 16.0
+margin_top = 64.0
+margin_right = 216.0
+margin_bottom = 584.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Buttons" type="VBoxContainer" parent="NavBar"]
+margin_left = 32.0
+margin_top = 128.0
+margin_right = 164.0
+margin_bottom = 389.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Home" type="Button" parent="NavBar/Buttons"]
+margin_right = 132.0
+margin_bottom = 49.0
+custom_fonts/font = ExtResource( 1 )
+text = "Home"
+
+[node name="Search" type="Button" parent="NavBar/Buttons"]
+margin_top = 53.0
+margin_right = 132.0
+margin_bottom = 102.0
+custom_fonts/font = ExtResource( 1 )
+text = "Search"
+
+[node name="Favs" type="Button" parent="NavBar/Buttons"]
+margin_top = 106.0
+margin_right = 132.0
+margin_bottom = 155.0
+custom_fonts/font = ExtResource( 1 )
+text = "Favorites"
+
+[node name="Categories" type="Button" parent="NavBar/Buttons"]
+margin_top = 159.0
+margin_right = 132.0
+margin_bottom = 208.0
+custom_fonts/font = ExtResource( 1 )
+text = "Categories"
+
+[node name="Explore" type="Button" parent="NavBar/Buttons"]
+margin_top = 212.0
+margin_right = 132.0
+margin_bottom = 261.0
+custom_fonts/font = ExtResource( 1 )
+text = "Explore"
+
+[node name="BottomNav" type="VBoxContainer" parent="NavBar"]
+margin_left = 16.0
+margin_top = 454.0
+margin_right = 68.0
+margin_bottom = 504.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Account" type="LinkButton" parent="NavBar/BottomNav"]
+margin_right = 52.0
+margin_bottom = 14.0
+text = "Account"
+
+[node name="Support" type="LinkButton" parent="NavBar/BottomNav"]
+margin_top = 18.0
+margin_right = 52.0
+margin_bottom = 32.0
+focus_mode = 2
+text = "Support"
+
+[node name="FAQ" type="LinkButton" parent="NavBar/BottomNav"]
+margin_top = 36.0
+margin_right = 52.0
+margin_bottom = 50.0
+focus_mode = 2
+text = "FAQ"
+
+[node name="RecipeManager" type="Panel" parent="."]
+margin_left = 232.0
+margin_top = 64.0
+margin_right = 1008.0
+margin_bottom = 584.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="RecipeManager"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 24.0
+margin_top = 16.0
+margin_right = 256.0
+margin_bottom = 168.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel4" type="Panel" parent="RecipeManager"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 24.0
+margin_top = 184.0
+margin_right = 256.0
+margin_bottom = 336.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel5" type="Panel" parent="RecipeManager"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 272.0
+margin_top = 184.0
+margin_right = 504.0
+margin_bottom = 336.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel6" type="Panel" parent="RecipeManager"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 520.0
+margin_top = 184.0
+margin_right = 752.0
+margin_bottom = 336.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel7" type="Panel" parent="RecipeManager"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 24.0
+margin_top = 352.0
+margin_right = 256.0
+margin_bottom = 504.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel8" type="Panel" parent="RecipeManager"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 272.0
+margin_top = 352.0
+margin_right = 504.0
+margin_bottom = 504.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel9" type="Panel" parent="RecipeManager"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 520.0
+margin_top = 352.0
+margin_right = 752.0
+margin_bottom = 504.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel2" type="Panel" parent="RecipeManager"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 272.0
+margin_top = 16.0
+margin_right = 504.0
+margin_bottom = 168.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel3" type="Panel" parent="RecipeManager"]
+self_modulate = Color( 0, 0, 0, 1 )
+margin_left = 520.0
+margin_top = 16.0
+margin_right = 752.0
+margin_bottom = 168.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Add" type="Button" parent="RecipeManager"]
+margin_left = 24.0
+margin_top = 16.0
+margin_right = 256.0
+margin_bottom = 168.0
+text = "+ Create New"
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MenuButton" type="Button" parent="."]
+margin_left = 32.0
+margin_top = 80.0
+margin_right = 76.0
+margin_bottom = 118.0
+icon = ExtResource( 2 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Search" type="LineEdit" parent="."]
+margin_left = 712.0
+margin_top = 16.0
+margin_right = 901.0
+margin_bottom = 56.0
+placeholder_text = "Search"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SearchButton" type="Button" parent="."]
+margin_left = 912.0
+margin_top = 16.0
+margin_right = 956.0
+margin_bottom = 56.0
+icon = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="User" type="Sprite" parent="."]
+position = Vector2( 988, 36 )
+scale = Vector2( 0.625, 0.625 )
+texture = ExtResource( 5 )
